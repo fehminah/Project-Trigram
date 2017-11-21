@@ -16,7 +16,7 @@
 - Milestone 2:
     - code must compile
     - when it compiles, an executable file named language should be created
-    -
+
 ## classes needed
 - Not planning to use classes
 - if we use classes:
