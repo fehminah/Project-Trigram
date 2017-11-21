@@ -9,7 +9,14 @@
 - distance determines how similar the trigram frequencies between two or more languages
 - 19,682 element vector of integers with 0's
 - distance function uses the cosine similarity equation on each language and whichever one has highest value is the most similar language
-
+- Milestone 1:
+  - code must compile
+  - when it compiles, an executable file named frequencies should be created
+  - output of frequency of each trigram separated by spaces in order
+- Milestone 2:
+    - code must compile
+    - when it compiles, an executable file named language should be created
+    -
 ## classes needed
 - Not planning to use classes
 - if we use classes:
@@ -33,7 +40,8 @@
         - n-1 files need to be the training files while the nth file has to be the testing file.
         - subtract 1 from agrc() to get the amount of files
         - then it could use the trigram() function to compute the frequency of each trigram
-        - returns language
+        - if filename is not found, it should throw a runtime_error
+        - returns filename of the most-similar training input
 - trigram()
     - need to create a vector of integers that are 0 and have to be the length of 27 cube
     - in a for loop, find the 27 base number and index that number in the vector of integers and increment 1
