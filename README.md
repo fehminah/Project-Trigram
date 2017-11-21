@@ -1,5 +1,4 @@
 ## Design Document for Trigram
-
 ## Eunice Arokiadoss and Fehmina Hasan
 
 ## Eunice: earokiadoss@my.uri.edu
