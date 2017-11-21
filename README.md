@@ -23,6 +23,18 @@
        - distance() - using the cosine similarity equation, the one with the highest number relative to the compared language is the most similar
 
 ## other functions
+- main():
+    - milestone 1  main:
+        - if there is more than one argument it will throw an error and return 1 which is a non zero value.
+        - each frequency vector should be separated by spaces
+        - returns frequency vector
+    - milestone 2  main:
+        - it needs to have 2 or more arguments otherwise it will throw an error and return 1 which is a non zero value
+        - if it doesn't find the file name it will automatically throw in an error and return 1
+        - n-1 files need to be the training files while the nth file has to be the testing file.
+        - subtract 1 from agrc() to get the amount of files
+        - then it could use the trigram() function to compute the frequency of each trigram
+        - returns language
 - trigram()
     - need to create a vector of integers that are 0 and have to be the length of 27 cube
     - in a for loop, find the 27 base number and index that number in the vector of integers and increment 1
