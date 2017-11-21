@@ -1,3 +1,23 @@
+commit 37691bf2d8e2e24c1441f47291d263d882c1bc06
+Author: Unknown <earokiadoss@my.uri.edu>
+Date:   Tue Nov 21 18:34:13 2017 -0500
+
+    Last update of final draft
+
+commit e836ef1faa9cee4fd95a10298ba620cbbc74b521
+Author: Unknown <earokiadoss@my.uri.edu>
+Date:   Tue Nov 21 18:31:01 2017 -0500
+
+    Updated final draft
+
+commit bee5902c36df9c182c8dbe58ff4cd1ebbf9409e8
+Author: Unknown <earokiadoss@my.uri.edu>
+Date:   Tue Nov 21 18:20:38 2017 -0500
+
+    Merge branch 'final'
+    
+    git log added
+
 commit 4dcd8f0aa2ce039e8f88eabe2ed48cf156d412dc
 Merge: 2d0476a f72f878
 Author: unknown <unknown@example.com>
