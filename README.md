@@ -24,7 +24,7 @@
 ## other functions
 - main():
     - milestone 1  main:
-        - if there is more than one argument it will throw an error and return 1 which is a non zero value.
+    - if there is more than one argument it will throw an error and return 1 which is a non zero value.
         - each frequency vector should be separated by spaces
         - returns frequency vector
     - milestone 2  main:

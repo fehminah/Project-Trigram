@@ -1,0 +1,56 @@
+commit 4dcd8f0aa2ce039e8f88eabe2ed48cf156d412dc
+Merge: 2d0476a f72f878
+Author: unknown <unknown@example.com>
+Date:   Tue Nov 21 18:06:06 2017 -0500
+
+    Merge branch 'final'
+
+commit f72f878dd86556ed20d62cc17be604e126433a7f
+Author: Unknown <earokiadoss@my.uri.edu>
+Date:   Tue Nov 21 18:06:00 2017 -0500
+
+    Final draft
+    
+    minor changes
+
+commit 2d0476af8584563c3bcd46b3c38a3a1fad0f1fbc
+Author: Unknown <earokiadoss@my.uri.edu>
+Date:   Tue Nov 21 18:03:57 2017 -0500
+
+    Final draft of design doucment
+    
+    Main for Milestone 1 and 2 were added
+
+commit 2c136be54b90afc54168e1b4666e08277fb32e5e
+Author: Unknown <earokiadoss@my.uri.edu>
+Date:   Tue Nov 21 18:02:44 2017 -0500
+
+    Three draft of design document and class section
+    
+    Completely explained problems to solve
+
+commit a123ab427445e27662a070badddc931962fab97a
+Author: Unknown <earokiadoss@my.uri.edu>
+Date:   Tue Nov 21 18:00:11 2017 -0500
+
+    Second draft of design document
+    
+    includes trigram(), translate() and distance() functions
+
+commit 551e9a1c407b8cf55b0798e2a9f57eaaa70780fa
+Author: Unknown <earokiadoss@my.uri.edu>
+Date:   Tue Nov 21 17:52:48 2017 -0500
+
+    First outline draft of the design document
+
+commit c2d6ebafbf0d0fdf0b16fa0afd972cbf3b8301e9
+Author: Unknown <earokiadoss@my.uri.edu>
+Date:   Tue Nov 21 17:45:31 2017 -0500
+
+    intial stage of design document
+
+commit a4b1be97a943bc84a8695effb7f1a7a437d7fcb6
+Author: Unknown <earokiadoss@my.uri.edu>
+Date:   Tue Nov 21 17:44:08 2017 -0500
+
+    Initial commit
