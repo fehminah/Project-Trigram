@@ -33,7 +33,7 @@
     - milestone 1  main:
     - if there is more than one argument it will throw an error and return 1 which is a non zero value.
         - each frequency vector should be separated by spaces
-        - returns frequency vector
+        - prints frequency vector
     - milestone 2  main:
         - it needs to have 2 or more arguments otherwise it will throw an error and return 1 which is a non zero value
         - if it doesn't find the file name it will automatically throw in an error and return 1
@@ -41,14 +41,14 @@
         - subtract 1 from agrc() to get the amount of files
         - then it could use the trigram() function to compute the frequency of each trigram
         - if filename is not found, it should throw a runtime_error
-        - returns filename of the most-similar training input
+        - prints filename of the most-similar training input
 - trigram()
     - need to create a vector of integers that are 0 and have to be the length of 27 cube
     - in a for loop, find the 27 base number and index that number in the vector of integers and increment 1
-    - get the "mode" of the frequency distribution for each language and then find the highest mode
-    - returns the highest mode
+    - returns entire frequency vector of all language
+
 - distance()
-    - in a for loop, each trigram will be computed using the cosine similarity equation to find its value
+    - in a for loop, each trigram and the query file will be compared using the cosine similarity equation to find its value
     - then the largest value will be the language that its most similar to
     - returns language
 
