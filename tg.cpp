@@ -6,14 +6,6 @@
 #include <cmath>
 using namespace std;
 
-//vector of 27^3
-vector<int> freqS(){
-    for(unsigned int i = 0; i < 19682; i++){
-        vector<int> freq;
-        freq[i] = 0;
-    }
-}
-
 //helper function
 vector<string> helperfunction() {
     vector<string> frequency;
@@ -41,13 +33,15 @@ vector<string> helperfunction() {
     }
     return frequency;
 }
-'thisis'
-'thi'
-'his'
-'isi'
-'sis'
 
-//atoi
+//vector of 27^3
+vector<int> freqS(){
+    for(unsigned int i = 0; i < 19682; i++){
+        vector<int> freq;
+        freq[i] = 0;
+    }
+}
+
 int trigram(language){
     int meow = 0;
     vector<string> woof = helperfunction();
@@ -70,6 +64,6 @@ double distance(double *pointA, double *pointB, unsigned int lvec)
     return x / (sqrt(y) * sqrt(z)) ;
 }
 
+//distance needs to completed
 // compile script
-//header files
-//other .cpp's
+//main
