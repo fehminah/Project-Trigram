@@ -43,9 +43,10 @@ int trigram(string language){
     vector<int> auuu = freqS();
     for(int i = 0; i < (int)language.length(); i++){
         if (woof[i] == auuu[i]){
-            meow += 1;
+            auuu += 1;
         }
     }
+    return
 }
 
 double distance(double *pointA, double *pointB, unsigned int lvec)
