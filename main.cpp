@@ -4,29 +4,23 @@
 #include<fstream>
 #include<ostream>
 #include<vector>
-#include "dna.h"
+#include"tg.h"
 using namespace std;
 
 
 int main(int argc, char *argv[]) {
+    (void)argc;
+    (void)argv;
 
-  double oink = distance(1,5,10);
-  cout<<oink<<endl;
-  //ifstream infile("sample.fasta");
-  //DNA dna = DNA(infile);
-  /*cout<<myDNA.toFasta(4);
+    double oink = distance(1.0,5.0,10);
+    cout<<oink<<endl;
 
-  vector<string> blah = myDNA.translate();
+    vector<string> bark = helper("meowwoofauuuoink");
+    cout<<bark<<endl;
 
-  for( unsigned int i = 0; i < blah.size();i++){
-    cout<<blah[i]<<endl;
-  }
 
-  //cout<<myDNA.getSequence()<<endl;
-  //cout<<myDNA.getHeader()<<endl;
-  cout<<myDNA.revcomp().getSequence()<<endl;
-  //string stuff = myDNA.getSequence();
-  //cout<<(myDNA.toFasta(3))<<endl;
-  cout<<myDNA.find("CAG", 0)<<endl;*/
-  return 0;
+    for(int i = 0; i < 19683; i++){
+        cout<<freqS[i]<<endl;
+    }
+    return 0;
 }
