@@ -6,15 +6,19 @@
 #include <vector>
 using namespace std;
 
-class Lang {
-	Private:
-		int freq[19863];
-		void helperfunction(string seq);
 
-	Pubic:
-		Lang(string l);
-		~Lang();
-		void trigram(string language);
-		void print();
+class Lang {
+private:
+	int len = 19863;
+	int *freq;
+	void trigram(string language);
+
+public:
+	Lang(string l); // calls trigram
+	~Lang();
+	//double distance(double pointA, double pointB, unsigned int lvec);
+	void print();
 
 };
+
+#endif
