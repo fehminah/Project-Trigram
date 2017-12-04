@@ -1,3 +1,5 @@
+//Name: Eunice Arokiadoss and Fehmina Hasan
+
 #include <iostream>
 #include <fstream>
 #include <stdexcept>
@@ -8,15 +10,18 @@
 #include "tg.h"
 using namespace std;
 
+//contructor
 Lang::Lang(string language){
-    freq = new int[len];
+    freq = new int[len]; //variable that initializes the array
     trigram(language);
 }
 
+//destructor
 Lang::~Lang(){
     delete[] freq;
 }
 
+//void function that adds 1 to the index in an array
 void Lang::trigram(string language){
     for(int i = 0; i < (int)language.length()-2; i++){
         int trigram = 0;
@@ -27,21 +32,10 @@ void Lang::trigram(string language){
     }
 }
 
+//void print function used to print out the frequency of each trigram in the array
 void Lang::print() {
     for(int i = 0; i <len; i++){
         cout<<freq[i]<< " ";
     }
     cout<<endl;
 }
-
-/*
-double Lang::distance(double pointA, double pointB, unsigned int lvec){
-    double x = 0.0, y = 0.0, z = 0.0;
-     for(unsigned int i = 0; i < lvec; i++) {
-        x += pointA[i] * pointB[i];
-        y += pointA[i] * pointA[i];
-        z += pointB[i] * pointB[i];
-    }
-    return x / (sqrt(y) * sqrt(z));
-}
-*/

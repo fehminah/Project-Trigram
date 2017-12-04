@@ -1,3 +1,5 @@
+//Name: Eunice Arokiadoss and Fehmina Hasan
+
 #ifndef _lang_h
 #define _lang_h
 
@@ -6,18 +8,17 @@
 #include <vector>
 using namespace std;
 
-
+//Header file
+//class caled Lang
 class Lang {
 private:
 	int len = 19863;
-	int *freq;
+	int *freq;  //pointer
 	void trigram(string language);
 public:
 	Lang(string l); // calls trigram
 	~Lang();
-	//double distance(double pointA, double pointB, unsigned int lvec);
 	void print();
-
 };
 
 #endif
