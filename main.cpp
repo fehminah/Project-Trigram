@@ -1,3 +1,5 @@
+//Name: Eunice Arokiadoss and Fehmina Hasan
+
 #include<iostream>
 #include<cstdlib>
 #include<string>
@@ -8,7 +10,7 @@
 using namespace std;
 
 int main() {
-    Lang x("thisisasentence");
+    Lang x("thisisasentence");  //given language string
     x.print();
     return 0;
 }
