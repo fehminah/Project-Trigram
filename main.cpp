@@ -9,8 +9,14 @@
 #include "tg.h"
 using namespace std;
 
-int main() {
-    Lang x("thisisasentence");  //given language string
+int main(int agrc, char *argv[]) {
+    Lang x("thisisasentence")x;  //given language string
     x.print();
+
+    if(agrc != 2){
+        runtime_error("Invalid");
+    }
+
     return 0;
+
 }
