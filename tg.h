@@ -12,7 +12,6 @@ private:
 	int len = 19863;
 	int *freq;
 	void trigram(string language);
-
 public:
 	Lang(string l); // calls trigram
 	~Lang();

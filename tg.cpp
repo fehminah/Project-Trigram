@@ -17,7 +17,6 @@ Lang::~Lang(){
     delete[] freq;
 }
 
-//0 1 0 0 1
 void Lang::trigram(string language){
     for(int i = 0; i < (int)language.length()-2; i++){
         int trigram = 0;
@@ -26,6 +25,13 @@ void Lang::trigram(string language){
         trigram += (language[i+2]-96);
         freq[trigram]++;
     }
+}
+
+void Lang::print() {
+    for(int i = 0; i <len; i++){
+        cout<<freq[i]<< " ";
+    }
+    cout<<endl;
 }
 
 /*
@@ -39,8 +45,3 @@ double Lang::distance(double pointA, double pointB, unsigned int lvec){
     return x / (sqrt(y) * sqrt(z));
 }
 */
-void Lang::print() {
-    for(int i = 0; i <(int)len; i++){
-        cout<<i<< " "<<endl;
-    }
-}
