@@ -11,7 +11,7 @@ using namespace std;
 
 int main(int agrc, char *argv[]) {
     if(agrc != 2){
-        runtime_error("Invalid");
+        throw runtime_error("Invalid");
     } else{
         Lang x(argv[1]);  //given language string
         x.print();

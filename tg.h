@@ -12,7 +12,7 @@ using namespace std;
 //class caled Lang
 class Lang {
 private:
-	int len = 19682;
+	int len = 19683;
 	int *freq;  //pointer
 	void trigram(string language);
 public:
