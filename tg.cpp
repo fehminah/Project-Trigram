@@ -21,14 +21,31 @@ Lang::~Lang(){
     delete[] freq;
 }
 
+//"thisismeow"
 //void function that adds 1 to the index in an array
 void Lang::trigram(string language){
+    int trigrams = 0;
     for(int i = 0; i < (int)language.length()-2; i++){
-        int trigram = 0;
-        trigram += (language[i]-96) * 27^2;
-        trigram += (language[i+1]-96) * 27;
-        trigram += (language[i+2]-96);
-        freq[trigram]++;
+        trigrams = 0;
+        if(language[i] == ' '){
+            trigrams += 0;
+        }
+        else{
+            trigrams += (int)((language[i]-96) * (27*27));
+        }
+        if(language[i+1] == ' '){
+            trigrams += 0;
+        }
+        else{
+            trigrams += (int)((language[i+1]-96) * (27));
+        }
+        if(language[i+2] == ' '){
+            trigrams += 0;
+        }
+        else{
+            trigrams += (int)((language[i+2]-96));
+        }
+        freq[trigrams]++;
     }
 }
 
