@@ -49,6 +49,17 @@ void Lang::trigram(string language){
     }
 }
 
+double Lang::cosine(double pointA, double pointB, unsigned int len){
+    double x = 0.0, y = 0.0, z = 0.0;
+     for(unsigned int i = 0; i < len; i++) {
+        x += pointA * pointB;
+        y += pointA * pointA;
+        z += pointB * pointB;
+    }
+    return x / (sqrt(y) * sqrt(z));
+}
+
+
 //void print function used to print out the frequency of each trigram in the array
 void Lang::print() {
     for(int i = 0; i <len; i++){

@@ -19,6 +19,8 @@ public:
 	Lang(string l); // calls trigram
 	~Lang();
 	void print();
+	double cosine(double pointA, double pointB, unsigned int lvec);
+	//Lang::Lang(ifstream &infile);
 };
 
 #endif
