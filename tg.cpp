@@ -21,7 +21,6 @@ Lang::~Lang(){
     delete[] freq;
 }
 
-//"thisismeow"
 //void function that adds 1 to the index in an array
 void Lang::trigram(string language){
     int trigrams = 0;
@@ -49,6 +48,18 @@ void Lang::trigram(string language){
     }
 }
 
+Lang::Lang(ifstream &infile){
+  if(!infile.fail()){
+      for(int i = 0; i < (int)infile.length(); i++){
+          string x1 = trigram(infile[i]);
+      }
+  }else{
+      throw runtime_error("Invalid");
+  }
+}
+
+//how do we test this?
+//how do we clear the array to compute the frequency
 double Lang::cosine(double pointA, double pointB, unsigned int len){
     double x = 0.0, y = 0.0, z = 0.0;
      for(unsigned int i = 0; i < len; i++) {
@@ -65,5 +76,6 @@ void Lang::print() {
     for(int i = 0; i <len; i++){
         cout<<freq[i]<< " ";
     }
+    len.clear();
     cout<<endl;
 }
