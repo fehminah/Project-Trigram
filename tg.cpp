@@ -13,16 +13,29 @@ using namespace std;
 //contructor
 Lang::Lang(string language){
     freq = new int[len]; //variable that initializes the array
+    //variable that initializes the array to all 0's
+    for (int i=0; i < len; i++) {
+        freq[i] = 0;
+    }
     trigram(language);
 }
 
 //destructor
 Lang::~Lang(){
-    delete[] freq;
+}
+
+//gets the each element trigram in each language
+int Lang::getArray(int i ){
+    return freq[i];
+}
+//getter function
+int Lang::getLen(){
+    return len;
 }
 
 //void function that adds 1 to the index in an array
 void Lang::trigram(string language){
+
     int trigrams = 0;
     for(int i = 0; i < (int)language.length()-2; i++){
         trigrams = 0;
@@ -46,36 +59,15 @@ void Lang::trigram(string language){
         }
         freq[trigrams]++;
     }
-}
 
-Lang::Lang(ifstream &infile){
-  if(!infile.fail()){
-      for(int i = 0; i < (int)infile.length(); i++){
-          string x1 = trigram(infile[i]);
-      }
-  }else{
-      throw runtime_error("Invalid");
-  }
 }
-
-//how do we test this?
-//how do we clear the array to compute the frequency
-double Lang::cosine(double pointA, double pointB, unsigned int len){
-    double x = 0.0, y = 0.0, z = 0.0;
-     for(unsigned int i = 0; i < len; i++) {
-        x += pointA * pointB;
-        y += pointA * pointA;
-        z += pointB * pointB;
+//cosine similarity function computes the value of each language
+double distance(Lang A, Lang B){
+    unsigned long long x = 0, y = 0, z = 0;
+    for(int i = 0; i <A.getLen(); i++){
+        x += A.getArray(i) * B.getArray(i);
+        y += A.getArray(i) * A.getArray(i);
+        z += B.getArray(i) * B.getArray(i);
     }
-    return x / (sqrt(y) * sqrt(z));
-}
-
-
-//void print function used to print out the frequency of each trigram in the array
-void Lang::print() {
-    for(int i = 0; i <len; i++){
-        cout<<freq[i]<< " ";
-    }
-    len.clear();
-    cout<<endl;
+    return (double) x / (sqrt(y) * sqrt(z));
 }

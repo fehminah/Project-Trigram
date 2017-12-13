@@ -8,19 +8,18 @@
 #include <vector>
 using namespace std;
 
-//Header file
-//class caled Lang
 class Lang {
 private:
-	int len = 19683;
+	int len = 27*27*27;
+	//get a getter method
 	int *freq;  //pointer
 	void trigram(string language);
+
 public:
 	Lang(string l); // calls trigram
 	~Lang();
-	void print();
-	double cosine(double pointA, double pointB, unsigned int lvec);
-	//Lang::Lang(ifstream &infile);
+	int getArray(int i);
+	int getLen();
 };
 
 #endif
